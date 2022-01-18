@@ -187,7 +187,7 @@ body #topbar {
   background: var(--tags-bg) !important;
   color: var(--tags-text) !important;
   border: 1px solid var(--tags-border) !important;
-  height: 16px !important;
+  vertical-align: middle;
   margin-left: 3px !important;
 }
 
