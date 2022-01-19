@@ -5,7 +5,9 @@
 @description Dark clean theme for Piazza
 @author Yuto Takano
 @homepageURL https://github.com/yutotakano/CleanPiazzaDark
-@supportUrl https://github.com/yutotakano/CleanPiazzaDark/issues
+@supportURL https://github.com/yutotakano/CleanPiazzaDark/issues
+
+@var text darkmode-images "Darkify images (0 for false, 1 for true)" 0
 ==/UserStyle== */
 
 @-moz-document domain("piazza.com") {
@@ -1150,5 +1152,9 @@ div.pull-left {
   background: var(--inactive-group-bg) !important;
   color: var(--inactive-group-text) !important;
   border: none !important;
+}
+
+img {
+  filter: invert(calc(96% * var(--darkmode-images))) hue-rotate(calc(185deg * var(--darkmode-images))) brightness(calc(100% + 25% * var(--darkmode-images)));
 }
 }
